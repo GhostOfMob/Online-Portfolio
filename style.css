@@ -212,6 +212,6 @@ button:hover {
 
 li:active, .download:active, .cnt:active, button:active{
   background-color: #00FF00;
-  color: #F3F3F3;
+  color: #1E1E1E;
   border-radius: 10px;
 }
