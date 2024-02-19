@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet'>
 </head>
 <body>
+    <!-- this is for navigation var -->
     <div class="all">
         <div id="nav">
             <ul>
@@ -17,7 +18,7 @@
                 <li><a href="#contact">CONTACT ME</a></li>
             </ul>
         </div>
-
+        <!-- This is for Home page of the Portfolio -->
         <div id="hero">
             <h2>Hello It’s Me....</h2>
             <h1>Rodicris Macayan</h1>
@@ -29,6 +30,8 @@
                 honing my skills.</p>
         </div>
         <br><br><br><br><br><br>
+
+        <!-- This section is about to me and what my skills are -->
         <div id="about">
             <img id="hehe" src="hero.png" alt="icon" width="400px" height="320px">
             <div id="part2">
@@ -63,6 +66,7 @@
             <a href="#contact" class="cnt">Guide Me</a>
         </div>
 
+        <!-- All my works -->
         <div id="works">
             <h1 id="work"><span style="color: #696FEE;">{My Works}</span></h1>
             <br><br><br>
@@ -95,22 +99,52 @@
             </div>
         </div>
         <br><br><br><br><br><br><br><br>
+
+        <!-- Contact section -->
         <div id="contact">
             <h1 id="contacts"><span style="color: #696FEE;">CONTACT_ME</span></h1>
-            <form action="/submit_form" method="POST">
+            <form autocomplete="off">
 
-                <input type="text" id="name" name="name" placeholder="Your Name">
+                <input
+                    type="text"
+                    id="name"
+                    class="form-control"
+                    placeholder="Your Name"
+                    autocomplete="name">
     
-                <input type="email" id="email" name="email" placeholder="Your Email">
+                <input
+                    type="email" 
+                    id="email" 
+                    class="form-control"
+                    placeholder="Your Email"
+                    autocomplete="email">
     
-                <textarea id="message" name="message" placeholder="Enter your message..."></textarea><br>
+                <textarea
+                    id="message"
+                    class="form-control"
+                    placeholder="Enter your message"
+                    autocomplete="off"></textarea><br>
     
-                <button type="submit">Send Message</button>
+                <button
+                    class="btn-primary"
+                    type="submit"
+                    onclick="sendMail()">Send Message
+                </button>
             </form>
         </div>
 
 
     </div>
     <script src="main.js"></script>
+
+    <script 
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("vwHQRrwt5ACgKiNzs");
+        })();
+        </script>
 </body>
 </html>
