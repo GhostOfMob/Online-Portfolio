@@ -1,134 +1,149 @@
 .all{
-    width: 1424px;
-    height: 2500px;
-    background-color: #0C1C3B;
-    background-image:url(sheesh.png);
-    background-size: 1250px;
-    background-repeat: no-repeat;
-    font-family: 'Jura';
+  width: 1424px;
+  height: 2500px;
+  background-color: #0C1C3B;
+  background-image:url(sheesh.png);
+  background-size: 1250px;
+  background-repeat: no-repeat;
+  font-family: 'Jura';
 }
 
 #nav{
-    width: 85%;
-    margin: auto;
-    padding: 20px 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+  width: 85%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    background-color: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  background-color: none;
+}
+
+li {
+  padding: 20px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid#1E1E1E;
+  border-radius: 2.5rem;
+  background-color: #1E1E1E;
+  transition: 0.4s all ease-in-out;
+}
+
+
+li:hover {
+  border-radius: 10px;
+  background-color: #B1A900 ;
+  color: #1E1E1E;
+  transform: scale(1.2);
+}
+
+a{
+  text-decoration: none;
+  color: #F3F3F3;
+}
+
+#nav ul.active {
+  display: flex;
   }
 
-  li {
-    padding: 20px;
-    margin-left: 10px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid#1E1E1E;
-    border-radius: 2.5rem;
-    background-color: #1E1E1E;
-    transition: 0.4s all ease-in-out;
+#nav ul li {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #nav ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
   }
+}
 
+/* for hero content only */
+#hero{
+  margin: 4rem;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  margin-left: 10rem;
+  color:#F3F3F3;
+}
 
-  li:hover {
-    border-radius: 10px;
-    background-color: #B1A900 ;
-    color: #1E1E1E;
-    transform: scale(1.2);
-  }
+/* content about to me and my skills I have */
+#about{
+  margin-left: 5rem;
+  margin-top: 5rem;
+  color: #F3F3F3;
+}
 
-  a{
-    text-decoration: none;
-    color: #F3F3F3;
-  }
+#hehe{
+  border: none;
+  border-radius: 100%;
+  background-color: #F3F3F3;
+  box-shadow: 0 0 10px #F3F3F3,
+              0 0 20px #F3F3F3,
+              0 0 30px #F3F3F3;
+}
 
+#part2{    
+  margin: 10px;
+  margin-left: 28rem;
+  padding: 10px;
+  margin-top: -25rem;
+}
 
-  #hero{
-    margin: 4rem;
-    margin-top: 8rem;
-    margin-bottom: 5rem;
-    margin-left: 10rem;
-    color:#F3F3F3;
-  }
+#skill{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  #about{
-    margin-top: 5rem;
-    color: #F3F3F3;
-  }
+#pic1, #pic2, #pic3 {
+  border: 1px solid#F3F3F3;
+  background-color: #F3F3F3;
+  border-radius: 100%;
+  margin: 1rem;
+  padding: 1rem;
+}
 
-  #about{
-    margin-left: 5rem;
-  }
-
-  #hehe{
-    border: none;
-    border-radius: 100%;
-    background-color: #F3F3F3;
-    box-shadow: 0 0 10px #F3F3F3,
-                0 0 20px #F3F3F3,
-                0 0 30px #F3F3F3;
-  }
-
-  #part2{
-    
-    margin: 10px;
-    margin-left: 28rem;
-    padding: 10px;
-    margin-top: -25rem;
-  }
-
-  #skill{
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #pic1, #pic2, #pic3 {
-    border: 1px solid#F3F3F3;
-    background-color: #F3F3F3;
-    border-radius: 100%;
-    margin: 1rem;
-    padding: 1rem;
-  }
-
-  #pic1, #pic2, #pic3 {animation: pulse 2.5s infinite;}
-  @keyframes pulse {
-      0%, 100% { transform: scale(1);}
-      50% { transform: scale(1.2);}
-  }
+/* animation for the three picture */
+#pic1, #pic2, #pic3 {animation: pulse 2.5s infinite;}
+@keyframes pulse {
+  0%, 100% { transform: scale(1);}
+  50% { transform: scale(1.2);}
+}
   
 
-  #btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+#btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .download, .cnt{
-    border: 1px solid#1E1E1E;
-    border-radius: 20px;
-    background-color: #1E1E1E;
-    padding: 2rem;
-    margin: 1rem;
-    transition: 0.4s all ease-in-out;
-    cursor: pointer;
-  }
+.download, .cnt{
+  border: 1px solid#1E1E1E;
+  border-radius: 20px;
+  background-color: #1E1E1E;
+  padding: 2rem;
+  margin: 1rem;
+  transition: 0.4s all ease-in-out;
+  cursor: pointer;
+}
 
-  .download:hover{
-    border-radius: 10px;
-    background-color: #1EC0B9 ;
-    transform: scale(1.2);
-  }
+.download:hover{
+  border-radius: 10px;
+  background-color: #1EC0B9 ;
+  transform: scale(1.2);
+}
 
 .cnt:hover{
   border-radius: 10px;
@@ -139,21 +154,25 @@ ul {
 #work, #contacts {
   margin-left: 40rem;
 }
+
+
 .wrapper{
-  max-height: 18.75rem;
+  max-height: 23rem;
   border: 1px solid#1E1E1E;
   display: flex;
   overflow-x: auto;
 }
 
-.wrapper .item {
+.wrapper{
   min-width: 27rem;
-  height: 18.75rem;
-  line-height: 18.75rem;
+  height: 23rem;
+  line-height: 5rem;
   align-items: center;
   background-color: #1E1E1E;
   margin-right: 2px;
 }
+
+
 
 
 #demo, #scode {
@@ -182,36 +201,52 @@ ul {
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 60rem;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    margin-left: 15rem;
+  width: 60rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-left: 15rem;
 }
 
 textarea {
-    height: 150px;
+  height: 150px;
 }
 
 button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 2rem;
-    margin-left: 42rem;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-left: 42rem;
 }
 
 button:hover {
-    background-color: #222;
-    border-radius: 10px;
+  background-color: #222;
+  border-radius: 10px;
 }
 
 li:active, .download:active, .cnt:active, button:active{
   background-color: #00FF00;
   color: #1E1E1E;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  #hero {
+    margin: 2rem auto;
+  }
+  #about {
+    margin-top: 3rem;
+  }
+  #skill {
+    flex-direction: column;
+  }
 }
