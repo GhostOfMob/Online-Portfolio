@@ -12,10 +12,10 @@
     <div class="all">
         <div id="nav">
             <ul>
-                <li><a href="#nav">HERO</a></li>
-                <li><a href="#about">ABOUT ME</a></li>
-                <li><a href="#works">WORKS</a></li>
-                <li><a href="#contact">CONTACT ME</a></li>
+                <li><a href="#nav">HERO</a></li> <!--for hero section-->
+                <li><a href="#about">ABOUT ME</a></li> <!--for me section-->
+                <li><a href="#works">WORKS</a></li> <!--for all works from github-->
+                <li><a href="#contact">CONTACT ME</a></li> <!--for contact section-->
             </ul>
         </div>
         <!-- This is for Home page of the Portfolio -->
@@ -128,7 +128,7 @@
                 <button
                     class="btn-primary"
                     type="submit"
-                    onclick="sendMail()">Send Message
+                    onclick="sendMail()">Send Message>
                 </button>
             </form>
         </div>
@@ -137,14 +137,13 @@
     </div>
     <script src="main.js"></script>
 
-    <script 
-        type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init("d_i1u2hOsKbBYoQRm");
-        })();
-        </script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("d_i1u2hOsKbBYoQRm"); //this key need daily update to function the contact section
+})();
+</script>
 </body>
 </html>
